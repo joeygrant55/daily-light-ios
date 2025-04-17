@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D4D208CC2DB09EF700A50DD8 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = D4D208CB2DB09EF700A50DD8 /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D4D208A52DAF42AB00A50DD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		D4D208AE2DAF42AB00A50DD8 /* Daily LightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily LightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D4D208CD2DB09F7F00A50DD8 /* Exceptions for "Daily Light" folder in "Daily Light" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Supabase.plist,
+			);
+			target = D4D208962DAF42A700A50DD8 /* Daily Light */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D4D208992DAF42A700A50DD8 /* Daily Light */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D4D208CD2DB09F7F00A50DD8 /* Exceptions for "Daily Light" folder in "Daily Light" target */,
+			);
 			path = "Daily Light";
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D208CC2DB09EF700A50DD8 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				D4D208992DAF42A700A50DD8 /* Daily Light */,
 				D4D208A72DAF42AB00A50DD8 /* Daily LightTests */,
 				D4D208B12DAF42AB00A50DD8 /* Daily LightUITests */,
+				D4D208CA2DB09EF700A50DD8 /* Frameworks */,
 				D4D208982DAF42A700A50DD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,13 @@
 				D4D208AE2DAF42AB00A50DD8 /* Daily LightUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D4D208CA2DB09EF700A50DD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +138,7 @@
 			);
 			name = "Daily Light";
 			packageProductDependencies = (
+				D4D208CB2DB09EF700A50DD8 /* Supabase */,
 			);
 			productName = "Daily Light";
 			productReference = D4D208972DAF42A700A50DD8 /* Daily Light.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = D4D2088E2DAF42A700A50DD8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D4D208C52DB097DA00A50DD8 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D4D208982DAF42A700A50DD8 /* Products */;
 			projectDirPath = "";
@@ -400,6 +430,7 @@
 				DEVELOPMENT_TEAM = J4KFGM39U5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Daily Light/Supabase.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +459,7 @@
 				DEVELOPMENT_TEAM = J4KFGM39U5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Daily Light/Supabase.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4D208C52DB097DA00A50DD8 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4D208CB2DB09EF700A50DD8 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4D208C52DB097DA00A50DD8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4D2088F2DAF42A700A50DD8 /* Project object */;
 }
