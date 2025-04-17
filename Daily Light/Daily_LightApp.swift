@@ -22,9 +22,13 @@ let supabase: SupabaseClient = {
 
 @main
 struct Daily_LightApp: App {
+    // Create the AuthViewModel as a StateObject
+    @StateObject private var authViewModel = AuthViewModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(authViewModel) // Inject into the environment
         }
     }
 }
