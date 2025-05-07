@@ -1,6 +1,7 @@
 # Xcode
 *.xcscheme
 xcuserdata/
+Daily Light.xcodeproj/project.xcworkspace/xcshareddata/
 
 # Swift Package Manager
 /.build/
